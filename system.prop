@@ -4,6 +4,12 @@
 
 # Camera
 persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1
+
+#force HAL1 for below packages
+camera.hal1.packagelist=com.skype.raider,com.whatsapp,com.android.camera,com.facebook.katana
+
+#Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # ADB
