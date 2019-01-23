@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := pixys_tissot
+PRODUCT_NAME := du_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -42,4 +42,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
 TARGET_BOOT_ANIMATION_RES := 1080
-export PIXYS_BUILD_TYPE := OFFICIAL
+# export DU_BUILD_TYPE := OFFICIAL
